@@ -11,6 +11,6 @@ first_name_list = [cell.value for cell in sheet['A']]
 
 print(first_name_list)
 print(len(first_name_list))
-first_name_set = set(first_name_list)
-print(first_name_set)
-print(type(repr(first_name_list)))
+# first_name_set = set(first_name_list)
+# print(first_name_set)
+# print(type(repr(first_name_list)))
