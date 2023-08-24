@@ -8,14 +8,15 @@ ws = wb['工作表1']
 num = 1
 
 for row in ws.iter_rows():
-    numbers: int =row[2].value
+    numbers =row[2].value
     if numbers >= 20000:
-        ws.cell(row=num, column=4).value ="VIP"
-    num += 1    
-# print(ws.cell(row=1, column=1).value)
-# print(ws.cell(row=1, column=2).value)
-# print(ws.cell(row=1, column=3).value)
+       ws.cell(row=num, column=4).value ="VIP"
+    num += 1   
+   
+# print(ws.cell(row=num+1, column=1).value)
+# print(ws.cell(row=num+1, column=2).value)
+# print(ws.cell(row=num+1, column=3).value)
 
-print (numbers)
+
       
 wb.save('names_and_savings_new.xlsx')
